@@ -7,7 +7,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Estilo personalizado para centrar el formulario verticalmente */
         body {
             display: flex;
             min-height: 100vh;
@@ -41,7 +40,7 @@
                 <label for="telefono" class="form-label">Nombre:</label>
                 <input type="text" id="telefono" name="telefono" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <a href="{{route('home-principal')}}" type="submit" class="btn btn-primary">Registrarse</a>
         </form>
         <p class="mt-3 text-center">¿Ya tienes una cuenta? <a href="{{route('login-cliente')}}">Inicia sesión</a></p>
     </div>

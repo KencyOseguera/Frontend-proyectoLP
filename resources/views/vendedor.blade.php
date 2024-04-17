@@ -52,7 +52,14 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8">
+                <h1>Bienvenido, [Nombre del Vendedor]</h1>
+                <br>
                 <h2 id="panel">Panel de control del vendedor</h2>
+
+                <!-- Botón para abrir el modal de edición de cuenta -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#editarCuentaModal">Editar cuenta</button>
+                <br>
+                <br>
                 <h4>Inventario de productos</h4>
                 <div class="form-group">
                     <label for="categoria">Filtrar por categoría:</label>
@@ -140,6 +147,42 @@
         </div>
     </div>
 
+     <!-- Modal de edición de cuenta -->
+     <div class="modal fade" id="editarCuentaModal" tabindex="-1" aria-labelledby="editarCuentaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarCuentaModalLabel">Editar información de la cuenta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de edición de cuenta -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Nombre del Vendedor" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripcion:</label>
+                            <textarea type="text" class="form-control" id="descripcion" value="Descripcion del Vendedor"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correo" value="[Correo del Vendedor]" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="contrasena">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script>
 
         function filtrarProductos(categoria) {
@@ -168,7 +211,9 @@
         }
 
     </script>
-
+     <!-- Scripts de Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 
 </body>
 </html>

@@ -15,6 +15,10 @@ class LoginController extends Controller
         return view('login');
     }
 
+    public function registro(){
+        return view('registroVendedor');
+    }
+
     public function registroComprador(){
         return view('registro');
     }
