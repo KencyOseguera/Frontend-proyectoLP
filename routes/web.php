@@ -33,6 +33,5 @@ Route::get('/loginvendedor', [LoginController::class, 'loginVendedor'])->name('l
 
 Route::get('/loginCiente', [LoginController::class, 'loginCliente'])->name('login-clie');
 
-Route::get('/ProductosVendedor', [VendedorController::class, 'productosVendedor'])->name('vendedor-productos');
+Route::get('/vendedor', [VendedorController::class, 'panelVendedor'])->name('vendedor-productos');
 
-Route::get('/ventas', [VendedorController::class, 'verVentas'])->name('vendedor-ventas');

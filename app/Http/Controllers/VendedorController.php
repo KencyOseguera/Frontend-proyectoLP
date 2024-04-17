@@ -7,11 +7,8 @@ use Illuminate\Http\Request;
 class VendedorController extends Controller
 {
     //
-    public function productosVendedor(){
+    public function panelVendedor(){
         return view('vendedor');
     }
 
-    public function verVentas(){
-        return view('ventas');
-    }
 }
