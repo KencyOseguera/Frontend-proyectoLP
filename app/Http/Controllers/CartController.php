@@ -14,4 +14,8 @@ class CartController extends Controller
     public function loginPagar(){
         return view('login');
     }
+
+    public function factura(){
+        return view('factura');
+    }
 }
