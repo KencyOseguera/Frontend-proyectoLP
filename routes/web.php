@@ -31,7 +31,10 @@ Route::get('/login', [CartController::class, 'loginPagar'])->name('login-cliente
 
 Route::get('/loginvendedor', [LoginController::class, 'loginVendedor'])->name('login-vendedor');
 
-Route::get('/loginCiente', [LoginController::class, 'loginCliente'])->name('login-clie');
+Route::get('/loginCiente', [LoginController::class, 'loginComprador'])->name('login-comprador');
 
 Route::get('/vendedor', [VendedorController::class, 'panelVendedor'])->name('vendedor-productos');
+
+Route::get('/registroCliente', [LoginController::class, 'registroComprador'])->name('registro-comprador');
+
 

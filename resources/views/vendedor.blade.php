@@ -105,15 +105,15 @@
                 <form action="/agregar_producto" method="POST">
                     <div class="form-group">
                         <label for="nombre">Nombre del producto:</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre del producto">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre del producto" required>
                     </div>
                     <div class="form-group">
                         <label for="precio">Precio:</label>
-                        <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio">
+                        <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio" required>
                     </div>
                     <div class="form-group">
                         <label for="descripcion">Descripción:</label>
-                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese una breve descipcion"></textarea>
+                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese una breve descipcion" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="categoria">Categoría:</label>
@@ -125,11 +125,11 @@
                     </div>
                     <div class="form-group">
                         <label for="cantidad">Cantidad en stock:</label>
-                        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad en stock">
+                        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad en stock" required>
                     </div>
                     <div class="form-group">
                         <label for="imagen">Imagen:</label>
-                        <input type="file" class="form-control-file" id="imagen" name="imagen">
+                        <input type="file" class="form-control-file" id="imagen" name="imagen" required>
                     </div>
                     <a  type="submit" class="btn btn-dark" onclick="alertaAgregar()">Agregar Producto</a>
                 </form>

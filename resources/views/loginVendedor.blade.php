@@ -42,7 +42,7 @@
       
           <p class="mt-10 text-center text-sm">
             No eres un vendedor?
-            <a href="{{route('login-clie')}}" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Ingresara como cliente</a>
+            <a href="{{route('login-comprador')}}" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Ingresara como cliente</a>
           </p>
         </div>
       </div>

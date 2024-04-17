@@ -16,7 +16,7 @@
     display: flex;
     position: relative;
     padding: 10px;
-    place-content: center;
+    place-content: end;
     z-index: 0;
     margin: auto;
   }
@@ -38,7 +38,7 @@
   }
   .search-container {
     position: relative;
-    width: 70%;
+    width: 50%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
@@ -138,6 +138,9 @@
         </div>
         <div style="padding: 10px">
         <a href="{{route('login-vendedor')}}" class=" btn btn-success" >Soy Vendedor</a>
+        <a href="{{ route('login-cliente') }}" class="btn btn-outline-primary">
+          <i class="fas fa-user"></i>Iniciar Sesion</a>
+
         </div>
       </div>
         

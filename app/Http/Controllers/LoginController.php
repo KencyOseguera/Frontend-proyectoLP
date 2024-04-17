@@ -11,7 +11,12 @@ class LoginController extends Controller
         return view('loginVendedor');
     }
 
-    public function loginCliente(){
+    public function loginComprador(){
         return view('login');
     }
+
+    public function registroComprador(){
+        return view('registro');
+    }
+
 }
