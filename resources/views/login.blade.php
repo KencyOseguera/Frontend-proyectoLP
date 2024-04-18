@@ -55,6 +55,7 @@
       </div>
     
       <script>
+        //validacion para el correo 
         document.addEventListener('DOMContentLoaded', function () { // DOMContentLoaded Es un evento que se dispara cuando todo el contenido HTML del documento ha sido completamente cargado
           const emailInput = document.getElementById('email');
       

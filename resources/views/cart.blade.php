@@ -61,7 +61,7 @@
             </tbody>
         </table>
         <div class="pay">
-            <a type="button" class="btn btn-success" href="{{route('login-cliente')}}">Pagar</a>
+            <a type="button" class="btn btn-success" href="{{route('login-cliente')}}" onclick="verificarUsuario(event)">Pagar</a>
             <a type="button" class="btn btn-primary" href="{{route('home-principal')}}">Regresar</a>
         </div>
     </div>
@@ -99,6 +99,27 @@
             document.getElementById("contador3").innerHTML = contador3;
         }
         
+    }
+
+
+
+    //Para Verificar si el usuario inicio sesion antes IDEA
+    function verificarUsuario(event) { 
+
+        let usuarioRegistrado = false; // Suponiendo que inicialmente el usuario no está registrado
+
+        // Función para verificar si el usuario está registrado antes de pagar
+        function verificarUsuario(event) {
+            event.preventDefault(); // Evitar que el enlace se abra automáticamente
+
+            if (usuarioRegistrado) {
+                // Si el usuario está registrado, redirigir a la página de pago
+                window.location.href = "{{route('cart-pagar')}}";
+            } else {
+                // Si el usuario no está registrado, redirigir a la página de inicio de sesión
+                window.location.href = "{{route('login-cliente')}}";
+            }
+        }
     }
     </script>
     
