@@ -236,7 +236,7 @@
     }
 
     function ropaclick(){
-      document.getElementById('calzado').style.display='block';
+      document.getElementById('ropa').style.display='block';
       document.getElementById('laptops').style.display='none';
       document.getElementById('calzado').style.display='none';
         

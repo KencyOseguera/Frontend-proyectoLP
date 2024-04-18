@@ -25,9 +25,9 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Quantity</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,27 +35,27 @@
                     <th scope="row">1</th>
                     <td><img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="img-cart"></td>
                     <td>$200</td>
-                    <td><button onclick="decrementar()" class="btn btn-outline-danger">-</button>
-                        <span id="contador" class="mx-2">0</span>
-                        <button onclick="incrementar()" class="btn btn-outline-success">+</button>
+                    <td><button onclick="decrementar(1)" class="btn btn-outline-danger">-</button>
+                        <span id="contador1" class="mx-2">0</span>
+                        <button onclick="incrementar(1)" class="btn btn-outline-success">+</button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td><img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="img-cart"></td>
                     <td>$200</td>
-                    <td><button onclick="decrementar()" class="btn btn-outline-danger">-</button>
-                        <span id="contador" class="mx-2">0</span>
-                        <button onclick="incrementar()" class="btn btn-outline-success">+</button>
+                    <td><button onclick="decrementar(2)" class="btn btn-outline-danger">-</button>
+                        <span id="contador2" class="mx-2">0</span>
+                        <button onclick="incrementar(2)" class="btn btn-outline-success">+</button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td><img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="img-cart"></td>
                     <td>$200</td>
-                    <td><button onclick="decrementar()" class="btn btn-outline-danger">-</button>
-                        <span id="contador" class="mx-2">0</span>
-                        <button onclick="incrementar()" class="btn btn-outline-success">+</button>
+                    <td><button onclick="decrementar(3)" class="btn btn-outline-danger">-</button>
+                        <span id="contador3" class="mx-2">0</span>
+                        <button onclick="incrementar(3)" class="btn btn-outline-success">+</button>
                     </td>
                 </tr>
             </tbody>
@@ -67,20 +67,39 @@
     </div>
 
     <script>
-        // Initialize the counter to 0
-        let contador = 0;
-        
-        // Function to decrement the counter
-        function decrementar() {
-            contador--;
-            document.getElementById("contador").innerHTML = contador;
+        // Inicializar el contador en 0
+        let contador1 = 0;
+        let contador2 = 0 ;
+        let contador3 = 0;
+    
+        // Function para decrementar, no va a decrementar si el contador esta esta en 0
+        function decrementar(producto) {
+        if (producto === 1 && contador1 > 0) {
+            contador1--;
+            document.getElementById("contador1").innerHTML = contador1;
+        } else if (producto === 2 && contador2 > 0) {
+            contador2--;
+            document.getElementById("contador2").innerHTML = contador2;
+        }else if (producto === 3 && contador3 > 0) {
+            contador3--;
+            document.getElementById("contador3").innerHTML = contador3;
+        }
+    }
+    
+        // Function para incrementar el contador
+        function incrementar(producto) {
+        if (producto === 1) {
+            contador1++;
+            document.getElementById("contador1").innerHTML = contador1;
+        } else if (producto === 2) {
+            contador2++;
+            document.getElementById("contador2").innerHTML = contador2;
+        }else if (producto === 3) {
+            contador3++;
+            document.getElementById("contador3").innerHTML = contador3;
         }
         
-        // Function to increment the counter
-        function incrementar() {
-            contador++;
-            document.getElementById("contador").innerHTML = contador;
-        }
+    }
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
