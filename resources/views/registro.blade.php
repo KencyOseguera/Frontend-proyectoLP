@@ -37,7 +37,7 @@
                 <input type="password" id="password" name="password" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="telefono" class="form-label">Nombre:</label>
+                <label for="telefono" class="form-label">Telefono:</label>
                 <input type="text" id="telefono" name="telefono" class="form-control" required>
             </div>
             <a href="{{route('home-principal')}}" type="submit" class="btn btn-primary">Registrarse</a>

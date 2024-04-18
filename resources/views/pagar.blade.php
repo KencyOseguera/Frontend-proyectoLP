@@ -101,7 +101,7 @@ module.exports = {
             </div>
         </div>
         <div class="mb-10">
-            <h1 class="text-center font-bold text-xl uppercase">Secure payment info</h1>
+            <h1 class="text-center font-bold text-xl uppercase">Informacion de pago</h1>
         </div>
         <div class="mb-3 flex -mx-2">
             <div class="px-2">
@@ -110,21 +110,15 @@ module.exports = {
                     <img src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png" class="h-8 ml-3">
                 </label>
             </div>
-            <div class="px-2">
-                <label for="type2" class="flex items-center cursor-pointer">
-                    <input type="radio" class="form-radio h-5 w-5 text-indigo-500" name="type" id="type2">
-                    <img src="https://www.sketchappsources.com/resources/source-image/PayPalCard.png" class="h-8 ml-3">
-                </label>
-            </div>
         </div>
         <div class="mb-3">
-            <label class="font-bold text-sm mb-2 ml-1">Name on card</label>
+            <label class="font-bold text-sm mb-2 ml-1">Direccion del pedido</label>
             <div>
-                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John Smith" type="text"/>
+                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Ingrese la direccion del pedido" type="text"/>
             </div>
         </div>
         <div class="mb-3">
-            <label class="font-bold text-sm mb-2 ml-1">Card number</label>
+            <label class="font-bold text-sm mb-2 ml-1">Numero de la Tarjeta</label>
             <div>
                 <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" placeholder="0000 0000 0000 0000" type="text"/>
             </div>
@@ -171,18 +165,10 @@ module.exports = {
             </div>
         </div>
         <div>
-            <a href="{{route('factura-comprador')}}" class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i class="mdi mdi-lock-outline mr-1"></i> PAY NOW</a>
+            <a href="{{route('factura-comprador')}}" class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold" style="text-align: center;"><i class="mdi mdi-lock-outline mr-1" ></i> Comprar Ahora!</a>
         </div>
     </div>
 </div>
 
-<!-- BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
-<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
-    <div>
-        <a title="Buy me a beer" href="https://www.buymeacoffee.com/scottwindon" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
-            <img class="object-cover object-center w-full h-full rounded-full" src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"/>
-        </a>
-    </div>
-</div>
 </body>
 </html>
