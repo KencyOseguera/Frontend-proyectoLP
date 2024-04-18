@@ -116,7 +116,7 @@
                     </div>
                     <div class="form-group">
                         <label for="precio">Precio:</label>
-                        <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio" required>
+                        <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio" required min="0">
                     </div>
                     <div class="form-group">
                         <label for="descripcion">Descripción:</label>
@@ -132,8 +132,9 @@
                     </div>
                     <div class="form-group">
                         <label for="cantidad">Cantidad en stock:</label>
-                        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad en stock" required>
+                        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad en stock" required min="0">
                     </div>
+                    
                     <div class="form-group">
                         <label for="imagen">Imagen:</label>
                         <input type="file" class="form-control-file" id="imagen" name="imagen" required>
