@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    function validadrCorreo(email) {
+    function validarCorreo(email) {
         // Patrón de validación de correo electrónico
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
