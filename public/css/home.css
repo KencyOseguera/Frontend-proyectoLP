@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    place-content: end;
+    z-index: 0;
+    margin: auto;
+  }
+  .cart-icon{
+    font-size: 40px;
+  }
+  .container-categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boton-categoria{
+    cursor: pointer;
+  }
+  .categorie {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+  }
+
+  .nav{
+    background: cadetblue;
+    color: white;
+  }
+  
+  .nav li{
+    padding-right: 30px;
+    padding: 20px 10px
+  }
+
+  .card {
+    padding: 10px;
+    margin: 0 10px;
+    width: 18rem;
+    border-radius: 0 1rem;
+  }

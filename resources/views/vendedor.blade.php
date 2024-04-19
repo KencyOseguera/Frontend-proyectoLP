@@ -5,47 +5,7 @@
     <title>Panel de control del vendedor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <style>
-        body {
-            background-color: #f8f9fa; 
-            color: #333333;
-        }
-        .table-container {
-            overflow-x: auto;
-        }
-        .table-striped tbody tr:nth-of-type(odd) {
-            background-color: #f2f2f2; /* Fondo de filas impares */
-        }
-        .table-striped tbody tr:nth-of-type(even) {
-            background-color: #ffffff; /* Fondo de filas pares */
-        }
-        .table th, td {
-            color: #006666;
-        }
-        .form-group{
-            padding: 10px 0;
-        }
-
-        .list-group-item{
-            padding: 1rem;
-        }
-
-        .agregar-producto {
-            background-color:#3ec0c0;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        #panel{
-            background: #008584;
-            color: white;
-            padding: 10px;
-            border-radius: 0.5rem;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="{{url('css/vendedor.css')}}">
 
 </head>
 <body>

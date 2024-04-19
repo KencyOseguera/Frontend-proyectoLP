@@ -1,0 +1,22 @@
+
+body {
+    background-color: #f8f9fa; 
+    color: #333333;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.columna-izquierda {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+.columna-derecha {
+    float: left;
+    width: 45%;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
