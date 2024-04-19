@@ -1,14 +1,31 @@
-document.addEventListener('DOMContentLoaded', function () { // DOMContentLoaded Es un evento que se dispara cuando todo el contenido HTML del documento ha sido completamente cargado
-    const emailInput = document.getElementById('email');
+document.addEventListener('DOMContentLoaded', function() {
+    function loginVendedorData() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
 
-    emailInput.addEventListener('input', function () {
-        const email = emailInput.value.trim(); //asegurar que no hay espacios en blanco en el correo 
-        const emailExpresion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //Expresion regular
-
-        if (!emailExpresion.test(email)) {
-            emailInput.setCustomValidity('Porfavor ingresa un correo valido'); //Mensaje de error con funcion estandar de javascript
-        } else {
-            emailInput.setCustomValidity('');
+        // Validación de correo electrónico
+        if (!validarCorreo(email)) {
+            alert("Por favor, ingresa un correo electrónico válido.");
+            return;
         }
-    });
+
+        // Crea un objeto JSON con los datos
+        let usuario = { email, password };
+
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+
+        // Muestra los datos almacenados en la consola del navegador
+        console.log('Datos del usuario registrado:', JSON.parse(localStorage.getItem('usuario')));
+
+
+    }
+
+    function validarCorreo(email) {
+        // Patrón de validación de correo electrónico
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
+
+    // Evento onclick para el botón "Sign in"
+    document.getElementById("iniciarSesion").addEventListener("click", loginVendedorData);
 });

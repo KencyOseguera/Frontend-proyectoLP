@@ -18,7 +18,7 @@
 <body style="background: #f5f5f5">
     <div class="container" style="max-width: 450px">
         <h2 class="text-center">¡Comienza tu Registro!</h2>
-        <form action="/registro" method="POST">
+        <form id="registroForm">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" class="form-control" required>
@@ -40,9 +40,13 @@
                 <label for="telefono" class="form-label">Telefono:</label>
                 <input type="text" id="telefono" name="telefono" class="form-control" required>
             </div>
-            <a href="{{route('home-principal')}}" type="submit" class="btn btn-primary">Registrarse</a>
+            <a href="{{route('home-principal')}}" type="submit" class="btn btn-primary" onclick="registrarUsuario()">Registrarse</a>
         </form>
         <p class="mt-3 text-center">¿Ya tienes una cuenta? <a href="{{route('login-cliente')}}">Inicia sesión</a></p>
     </div>
+
+
+    <script src="{{url('js/registro.js')}}"></script>
+
 </body>
 </html>
