@@ -40,59 +40,59 @@
           <div class="container-categories">
             <div class="container-laptops categorie" id="laptops">
                 <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+                    <img src="{{url('img/Notebook-9-Pro-3.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">PRECIO</h5>
                       <p class="card-text">NOMBRE</p>
                       <p class="card-text">DESCRIPCION</p>
-                      <a href="#" class="btn btn-primary" onclick="addToCart('NOMBRE', 200)">Add to cart</a>
+                      <a href="#" class="btn btn-primary" onclick="addToCart('NOMBRE', 200, 'img/Notebook-9-Pro-3.jpg')">Add to cart</a>
                     </div>
                   </div>
                   <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+                    <img src="{{url('img/Notebook-9-Pro-3.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">$200</h5>
                       <p class="card-text">Windows Xp</p>
                       <p class="card-text">1GB RAM, 16 GB HDD,Celeron N300</p>
-                      <a href="#" class="btn btn-primary"onclick="addToCart('windows xp2', 200)">Add to cart</a>
+                      <a href="#" class="btn btn-primary"onclick="addToCart('windows xp2', 200, 'img/Notebook-9-Pro-3.jpg')">Add to cart</a>
                     </div>
                   </div>
                   <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+                    <img src="{{url('img/Notebook-9-Pro-3.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">$300</h5>
                       <p class="card-text">Windows Xp</p>
                       <p class="card-text">1GB RAM, 16 GB HDD,Celeron N300</p>
-                      <a href="#" class="btn btn-primary" onclick="addToCart('windows xp3', 300)">Add to cart</a>
+                      <a href="#" class="btn btn-primary" onclick="addToCart('windows xp3', 300, 'img/Notebook-9-Pro-3.jpg')">Add to cart</a>
                     </div>
                   </div>
                 </div>
                 <div class="categorie-calzado categorie" id="calzado">
                     <div class="card">
-                        <img src="https://th.bing.com/th/id/OIP.Fr2Bnn6IHEDC0BX5nm89BwHaFM?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+                        <img src="{{url('img/matestation-x-series-1.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">$200</h5>
                           <p class="card-text">Windows Xp</p>
                           <p class="card-text">1GB RAM, 16 GB HDD,Celeron N300</p>
-                          <a href="#" class="btn btn-primary" onclick="addToCart('windows xp', 200)">Add to cart</a>
+                          <a href="#" class="btn btn-primary" onclick="addToCart('windows xp', 200, 'img/matestation-x-series-1.jpg')">Add to cart</a>
                         </div>
                       </div>
                       <div class="card">
-                        <img src="https://th.bing.com/th/id/OIP.Fr2Bnn6IHEDC0BX5nm89BwHaFM?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+                        <img src="{{url('img/matestation-x-series-1.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">$200</h5>
                             <p class="card-text">Windows Xp</p>
                             <p class="card-text">1GB RAM, 16 GB HDD,Celeron N300</p>
-                            <a href="#" class="btn btn-primary" onclick="addToCart('windows xp2', 200)">Add to cart</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('windows xp2', 200, 'img/matestation-x-series-1.jpg')">Add to cart</a>
                         </div>
                       </div>
                       <div class="card">
-                        <img src="https://th.bing.com/th/id/OIP.Fr2Bnn6IHEDC0BX5nm89BwHaFM?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+                        <img src="{{url('img/matestation-x-series-1.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">$300</h5>
                           <p class="card-text">Windows Xp</p>
                           <p class="card-text">1GB RAM, 16 GB HDD,Celeron N300</p>
-                          <a href="#" class="btn btn-primary" onclick="addToCart('windows xp 3', 300)">Add to cart</a>
+                          <a href="#" class="btn btn-primary" onclick="addToCart('windows xp 3', 300, 'img/matestation-x-series-1.jpg')">Add to cart</a>
                         </div>
                       </div>
                 </div>

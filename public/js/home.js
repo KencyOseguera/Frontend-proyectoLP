@@ -1,10 +1,15 @@
  // Función para agregar un producto al carrito
- function addToCart(nombreproducto, precio) {
+  function addToCart(nombreproducto, precio, img) {
     // Obtener el carrito de localStorage o crear uno vacío si no existe
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Agregar el producto al carrito
-    cart.push({ nombreproducto, precio });
+    // Verificar si el producto ya está en el carrito
+    let existingItem = cart.find(item => item.nombreproducto === nombreproducto);
+    if (existingItem) {
+        existingItem.cantidad++;
+    } else {
+        cart.push({ nombreproducto, precio, img, cantidad: 1 });
+    }
 
     // Guardar el carrito actualizado en localStorage
     localStorage.setItem('cart', JSON.stringify(cart));

@@ -21,37 +21,8 @@
                     <th scope="col">Cantidad</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td><img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="img-cart"></td>
-                    <td>NombrePoducto</td>
-                    <td>$200</td>
-                    <td><button onclick="decrementar(1)" class="btn btn-outline-danger">-</button>
-                        <span id="contador1" class="mx-2">0</span>
-                        <button onclick="incrementar(1)" class="btn btn-outline-success">+</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td><img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="img-cart"></td>
-                    <td>NombrePoducto</td>
-                    <td>$200</td>
-                    <td><button onclick="decrementar(2)" class="btn btn-outline-danger">-</button>
-                        <span id="contador2" class="mx-2">0</span>
-                        <button onclick="incrementar(2)" class="btn btn-outline-success">+</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td><img src="https://th.bing.com/th/id/OIP.ed-29-ckMum--DpdlJRKHgHaFW?rs=1&pid=ImgDetMain" class="img-cart"></td>
-                    <td>NombrePoducto</td>
-                    <td>$200</td>
-                    <td><button onclick="decrementar(3)" class="btn btn-outline-danger">-</button>
-                        <span id="contador3" class="mx-2">0</span>
-                        <button onclick="incrementar(3)" class="btn btn-outline-success">+</button>
-                    </td>
-                </tr>
+            <tbody id="cart-items">
+                
             </tbody>
         </table>
         <div class="pay">
