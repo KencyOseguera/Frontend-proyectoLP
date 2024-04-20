@@ -15,33 +15,26 @@
                     <div class="columna-izquierda">
                         <div class="form-group">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
                         </div>
                         <div class="form-group">
                             <label for="descripcion">Descripción:</label>
-                            <textarea class="form-control" id="descripcion" name="descripcion" required></textarea>
+                            <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Ingresar breve descripcion" required></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="correo">Correo electrónico:</label>
-                            <input type="email" class="form-control" id="correo" name="correo" required>
+                            <label for="cuentavendedor">Cuenta del Vendedor:</label>
+                            <input type="number" class="form-control" id="cuentavendedor" name="cuentavendedor" placeholder="Cuenta asociada" min="0" required>
                         </div>
-                        <div class="form-group">
-                            <label for="contrasena">Contraseña:</label>
-                            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
-                        </div>
+                        
                     </div>
                     <div class="columna-derecha">
                         <div class="form-group">
-                            <label for="tarjeta">Número de tarjeta:</label>
-                            <input type="number" class="form-control" id="tarjeta" name="tarjeta" min="0" required>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresar correo electronico" required>
                         </div>
                         <div class="form-group">
-                            <label for="vencimiento">Fecha de vencimiento:</label>
-                            <input type="date" class="form-control" id="vencimiento" name="vencimiento" placeholder="MM/YY" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cvv">CVV:</label>
-                            <input type="text" class="form-control" id="cvv" name="cvv" required>
+                            <label for="contrasena">Contraseña:</label>
+                            <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingresar una contraseña" required>
                         </div>
                     </div>
                     <div class="clearfix"></div>

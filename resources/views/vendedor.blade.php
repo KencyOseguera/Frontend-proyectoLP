@@ -133,7 +133,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="contrasena" class="form-label">Contraseña:</label>
-                            <input type="password" class="form-control" id="contrasena">
+                            <input type="password" class="form-control" id="contrasena" value="contraseña del vendedor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidad" class="form-label">Contraseña:</label>
+                            <input type="number" class="form-control" id="cantidad" min="0" value="Cantidad disponible">
                         </div>
                         <button type="submit" class="btn btn-primary">Guardar cambios</button>
                     </form>
